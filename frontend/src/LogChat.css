@@ -1,0 +1,121 @@
+.log-chat {
+  width: 800px;
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh; /* Limita l'altezza massima */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header input {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.date {
+  text-align: right;
+}
+
+.comments-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column-reverse; /* Questo fa sì che i nuovi commenti appaiano in basso */
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.comment {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.new-comment {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.new-comment input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.new-comment button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.new-comment button:hover {
+  background-color: #505050;
+}
+
+.log-textarea {
+  width: 100%;
+  min-height: 100px;
+  max-height: 300px; /* Limita l'altezza massima */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: auto;
+  overflow-x: hidden; /* Nasconde lo scrolling orizzontale */
+  resize: none; /* Permette di ridimensionare verticalmente */
+}
+
+button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #505050;
+}
+
+.tagging-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.tagging-menu div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tagging-menu div:hover {
+  background-color: #f0f0f0;
+}

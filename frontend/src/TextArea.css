@@ -1,0 +1,26 @@
+.log-textarea {
+    width: 100%;
+    min-height: 100px;
+    max-height: 300px; /* Limita l'altezza massima */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: auto;
+    overflow-x: hidden; /* Nasconde lo scrolling orizzontale */
+    resize: none; /* Permette di ridimensionare verticalmente */
+  }
+  
+  button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #505050;
+  }
+  

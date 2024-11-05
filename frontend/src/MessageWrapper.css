@@ -1,0 +1,37 @@
+.comments-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column-reverse; /* Mantiene i nuovi commenti in basso */
+  overflow-y: auto;
+  margin-top: 20px;
+  
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow-y: auto;
+  
+}
+
+.comment {
+  background-color: #f5f5dc; /* Ocra chiaro */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #000000; /* Testo in nero */
+}
+
+.commentor {
+  display: block; /* Forza il nome a occupare una nuova linea */
+  font-weight: bold; /* Nome in grassetto */
+  color: #8b4513; /* Marrone per il nome */
+  margin-bottom: 5px; /* Spazio tra il nome e il commento */
+}
+
+.comment-text {
+  color: #000000; /* Testo del commento in nero */
+  
+}

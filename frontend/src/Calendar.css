@@ -1,0 +1,85 @@
+/* src/Calendar.css */
+.calendar-container {
+  display: flex;
+}
+
+.calendar {
+  width: 510px; /* Dimensione fissa per il calendario */
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.daysOfWeek, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.dayOfWeek, .day {
+  padding: 10px; /* Dimensione normale */
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+  height: 65px; /* Altezza fissa per tutte le caselle */
+  width: 65px; /* Larghezza fissa per tutte le caselle */
+}
+
+.day {
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: #f0f0f0;
+}
+
+.empty {
+  background-color: #f9f9f9;
+}
+
+.day.event {
+  background-color: #ffeb3b; /* Colore di sfondo per gli eventi */
+  color: #000; /* Colore del testo per gli eventi */
+}
+
+.date-number {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 0.8em; /* Riduci il font del 20% */
+  color: #555;
+}
+
+.event-text {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 0.7em; /* Riduci il font del 20% */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button {
+  background-color: grey; /* Sfondo grigio per i bottoni */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #505050;
+}
